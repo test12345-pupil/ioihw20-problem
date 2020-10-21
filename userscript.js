@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ioihw2020 题目信息
 // @namespace    https://ioihw2020.duck-ac.cn
-// @version      0.1.1
+// @version      0.1.2
 // @description  一道都不会做
 // @author       xzz
 // @match        https://ioihw20.duck-ac.cn/problem/*
@@ -31,8 +31,7 @@
     if(problemId>1&&problemId%4!=0){
         var li_problemSource=document.createElement("li");
         var contestId=problemSource[problemList[problemId-101].charCodeAt(0)-65];
-        var problemCFId=problemList[problemId-101][1];
-        li_problemSource.innerHTML='<a class="uoj-username" href="https://www.codeforces.com/gym/'+contestId+'"><span style="font-weight: normal">原题：Problem '+problemCFId+'</span></a>';
+        li_problemSource.innerHTML='<a class="uoj-username" href="https://www.codeforces.com/gym/'+contestId+'"><span style="font-weight: normal">原题：Problem '+problemList[problemId-101]+'</span></a>';
         $(".nav-tabs")[0].appendChild(li_problemSource);
     }
 })();

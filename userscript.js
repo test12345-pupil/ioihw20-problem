@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ioihw2020 题目信息
 // @namespace    https://ioihw2020.duck-ac.cn
-// @version      0.1.2
+// @version      0.1.3
 // @description  一道都不会做
 // @author       xzz
 // @match        https://ioihw20.duck-ac.cn/problem/*
@@ -10,6 +10,7 @@
 // @downloadURL  https://raw.githubusercontent.com/xzz-233/ioihw20-problem/master/userscript.js
 // @supportURL   https://github.com/xzz-233/ioihw20-problem/issues
 // @homepage     https://github.com/xzz-233/ioihw20-problem
+// @run-at       document-body
 // ==/UserScript==
 
 (function() {

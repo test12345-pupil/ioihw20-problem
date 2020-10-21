@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ioihw2020 题目信息
 // @namespace    https://ioihw2020.duck-ac.cn
-// @version      0.1
+// @version      0.1.1
 // @description  一道都不会做
 // @author       xzz
 // @match        https://ioihw20.duck-ac.cn/problem/*
@@ -22,7 +22,7 @@
     $(".nav-tabs")[0].appendChild(li_problemType);
     var authorName;
     if(problemId==1)authorName="root";
-    else authorName="ioi2021_"+((problemId-101)>>2);
+    else authorName="ioi2021_"+(((problemId-101)>>2)<10?"0":"")+String((problemId-101)>>2);
     li_author.innerHTML='<span style="display:block;padding:10px 15px;">题目提供者：<a class="uoj-username" href="https://ioihw20.duck-ac.cn/user/profile/'+authorName+
         '" style="color:rgb(75,175,178)"><span style="font-weight: normal">'+authorName+'</span></a></span>';
     $(".nav-tabs")[0].appendChild(li_author);
